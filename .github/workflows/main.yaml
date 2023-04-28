@@ -43,7 +43,7 @@ jobs:
           tflint_version: latest
 
       - name: Run TFLint
-        run: tflint -f json --chdir=tflint-output.json --recursive
+        run: tflint -f json --chdir=tflint-output.json
 
       - uses: actions/upload-artifact@v2
         with:
